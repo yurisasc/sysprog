@@ -1,0 +1,7 @@
+import time
+from gpiozero import Robot
+robby = Robot(left=(9,10), right=(8,7))
+
+robby.forward(0.4)
+time.sleep(3)
+robby.stop()
